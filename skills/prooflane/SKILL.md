@@ -1,5 +1,5 @@
 ---
-name: project-evidence-audit
+name: prooflane
 description: Use when evaluating a project, repository, or product docs with an evidence-first method, especially when blind or double-blind review is needed to reduce branding and prestige bias.
 license: MIT
 compatibility: opencode
@@ -7,12 +7,14 @@ compatibility: opencode
 
 # Project Evidence Audit
 
-Use this skill as the entrypoint for project evaluation when you need evidence over marketing language.
+Use this skill as the entrypoint for project evaluation when you need evidence
+over marketing language.
 
 ## What this skill does
 
 - Runs standard evidence-first review for a single project.
-- Runs blind review by generating a neutral brief and invoking `@blind-reviewer`.
+- Runs blind review by generating a neutral brief and invoking
+  `@blind-reviewer`.
 - Runs multi-project double-blind comparison with normalized project briefs.
 
 ## Required operating rule
@@ -20,6 +22,7 @@ Use this skill as the entrypoint for project evaluation when you need evidence o
 Prefer verifiable evidence over self-description.
 
 Treat these as unsupported unless independently validated:
+
 - marketing adjectives and superlatives
 - prestige cues (founders, funding, famous logos)
 - ranking claims without method
@@ -28,7 +31,8 @@ Treat these as unsupported unless independently validated:
 ## Workflow
 
 1. Collect source material (repo, docs, product pages, benchmark links).
-2. Separate each major point into `Claim`, `Evidence`, and `Inference` where needed.
+2. Separate each major point into `Claim`, `Evidence`, and `Inference` where
+   needed.
 3. Pick review mode:
    - standard review
    - blind review
@@ -50,11 +54,17 @@ Treat these as unsupported unless independently validated:
 # Neutral Evidence Brief: Project X
 
 ## Verified capabilities
+
 ## Technical and implementation signals
+
 ## Maintenance and activity signals
+
 ## Adoption or external validation
+
 ## Constraints and trade-offs
+
 ## Missing information
+
 ## Risk notes
 ```
 
