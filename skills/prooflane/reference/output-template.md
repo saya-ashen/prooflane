@@ -29,6 +29,9 @@
 - Maintainability and activity:
 - External validation:
 - Risk transparency:
+- Weighted mean (1-5):
+- Provisional total (0-100):
+- Evidence coverage (0-1):
 
 ## Confidence
 [High / medium / low, with why]
@@ -58,6 +61,10 @@
 ## Evidence-backed risks
 ## Weakly supported positives
 ## Provisional score
+- Dimension scores (1-5 or uncertain)
+- Weighted mean (1-5)
+- Provisional total (0-100)
+- Evidence coverage (0-1)
 ## Confidence and uncertainty
 ```
 
@@ -76,6 +83,11 @@
 ### Project A
 ### Project B
 ### Project C
+
+## Scoring table
+- Project A: weighted mean, provisional total, evidence coverage
+- Project B: weighted mean, provisional total, evidence coverage
+- Project C: weighted mean, provisional total, evidence coverage
 
 ## Major uncertainties
 ## Evidence most needed to change the ranking

@@ -48,6 +48,32 @@ Treat these as unsupported unless independently validated:
    - invoke `@blind-reviewer` on anonymized briefs
    - reveal identity only after ranking is complete
 
+## Input-output contract (required)
+
+Before invoking `@blind-reviewer`, prepare input that satisfies
+`reference/input-output-contract.md`.
+
+Minimum handoff package per project:
+
+- one `Neutral Evidence Brief` with all required sections
+- evidence points structured as `Claim`, `Evidence`, and `Inference` when needed
+- source links or source identifiers for each non-trivial evidence point
+- contamination status from `reference/blind-mode-checklist.md`
+
+If the package fails contract checks, revise before handoff.
+
+## Handoff and fallback policy
+
+Use this sequence for blind and double-blind runs:
+
+1. Run contamination and contract checks.
+2. If failed, revise the brief and re-check (max 2 revisions).
+3. If still failed after 2 revisions, return a constrained result with explicit
+   `Missing information` and `Risk notes` instead of fabricating certainty.
+4. Pass only neutralized, contract-compliant material to `@blind-reviewer`.
+
+Do not convert missing evidence into inferred positives.
+
 ## Required neutral brief structure
 
 ```md
@@ -74,3 +100,5 @@ Treat these as unsupported unless independently validated:
 - `reference/output-template.md`
 - `reference/blind-mode-checklist.md`
 - `reference/evidence-rules.md`
+- `reference/input-output-contract.md`
+- `reference/examples.md`

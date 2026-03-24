@@ -29,6 +29,25 @@ You should receive either:
 1. one `Neutral Evidence Brief` for a single-project blind review, or
 2. multiple anonymized briefs for a multi-project double-blind comparison.
 
+Input is expected to follow `reference/input-output-contract.md`.
+
+## Input validation before scoring
+
+Before evaluation, check:
+
+- required brief sections are present
+- major evidence points include concrete support
+- identity leakage/contamination is absent
+
+If critical contamination is present, return a constrained result with:
+
+- `contamination detected`
+- what must be neutralized
+- no final ranking claim
+
+If required sections are missing, proceed only provisionally and lower
+confidence explicitly.
+
 ## Evaluation method
 
 Evaluate only from available evidence using these dimensions:
@@ -63,6 +82,9 @@ Use this structure:
 ## Weakly supported positives
 
 ## Provisional score
+- include dimension scores (1-5 or uncertain)
+- include weighted mean and provisional total when computable
+- include evidence coverage
 
 ## Confidence and uncertainty
 ```
@@ -84,6 +106,12 @@ Use this structure:
 
 ## Evidence most needed to change the ranking
 ```
+
+For multi-project output, include a compact per-project scoring table with:
+
+- weighted mean
+- provisional total
+- evidence coverage
 
 ## Tone
 
