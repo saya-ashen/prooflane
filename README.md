@@ -32,6 +32,10 @@ prooflane/
 - `skills/prooflane/reference/blind-mode-checklist.md`: contamination severity
   gates and actions.
 - `skills/prooflane/reference/examples.md`: minimal examples for each mode.
+- `tests/evals/ab_protocol.md`: A/B evaluation protocol for skill efficacy.
+- `tests/evals/scorecard.md`: behavior-first scoring rubric.
+- `tests/evals/prompts/`: fixed prompt templates for reproducible runs.
+- `tests/fixtures/adversarial/`: contamination and unsupported-claim fixtures.
 
 ## Supported modes
 
@@ -44,3 +48,10 @@ prooflane/
 - `Use project-evidence-audit to evaluate this repo in blind mode.`
 - `Extract a neutral evidence brief, then let @blind-reviewer score it.`
 - `Compare three projects in double-blind mode and rank by product maturity.`
+
+## Evaluation assets
+
+- Run matched A/B trials using `tests/evals/ab_protocol.md`.
+- Score outputs with `tests/evals/scorecard.md`.
+- Use adversarial fixtures when small clean examples are not differentiating
+  skill-on vs skill-off behavior.
